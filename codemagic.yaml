@@ -4,12 +4,17 @@ workflows:
     max_build_duration: 30
     instance_type: linux_x2
     environment:
-      groups: []
       vars:
         PACKAGE_NAME: "app.wapa.clamj52mn"
     scripts:
+      - name: Install Gradle 8.7
+        script: |
+          curl -sL -o gradle-8.7-bin.zip https://services.gradle.org/distributions/gradle-8.7-bin.zip
+          unzip -q gradle-8.7-bin.zip -d $HOME
+          echo "PATH=$HOME/gradle-8.7/bin:$PATH" >> $CM_ENV
       - name: Build APK
         script: |
+          gradle -v
           gradle assembleRelease --no-daemon
     artifacts:
       - app/build/outputs/apk/**/*.apk
