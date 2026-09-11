@@ -1,9 +1,9 @@
 # CLAM TV — Android app project
 
 This folder is a complete Android app that opens **https://clamtv.vercel.app** full screen,
-with your name, icon and colours already filled in.
+with its name, icon and colours already filled in.
 
-## Easiest way to get an APK (free, no software to install)
+## Easiest way to get the APK (free, no software to install)
 
 1. Create a free GitHub account and make a new **empty** repository.
 2. Upload every file in this folder to that repository (drag and drop works).
@@ -29,12 +29,12 @@ Android blocks apps that don't come from the Play Store until you allow it:
 4. Go back and tap **Install**, then **Open**.
 
 The build above is signed with the standard debug key, which is fine for
-sharing directly. To publish on Google Play you need your own release key —
+sharing directly. To publish on Google Play it needs its own release key —
 Android Studio's **Build → Generate Signed Bundle / APK** walks you through it.
 
 ## Notes
 
-- This app shows your website inside a full-screen browser view. Anything that
+- This app shows clamtv site inside a full-screen browser view. Anything that
   works on your website works here.
-- iPhone cannot install APK files. iPhone users should open your app link in
+- iPhone cannot install APK files. iPhone users should open your app link in 
   Safari and use **Share → Add to Home Screen** instead.
